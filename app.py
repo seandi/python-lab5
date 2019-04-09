@@ -27,7 +27,6 @@ def add_task():
 
 @app.route('/delete_task/<id_task>')
 def delete_task(id_task):
-    print(id_task)
     tododb.delete_task(id_task)
     return redirect(url_for('index'))
 
